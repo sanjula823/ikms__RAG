@@ -1,0 +1,128 @@
+/* Source Panel Styles */
+
+.source-panel {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.source-panel.empty {
+  padding: 20px;
+  text-align: center;
+  color: #999;
+}
+
+.source-panel-header {
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.source-panel-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.source-panel-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.source-item {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.source-item:last-child {
+  border-bottom: none;
+}
+
+.source-item.expanded {
+  background-color: #f5f5f5;
+}
+
+.source-item-header {
+  padding: 12px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background-color 0.2s ease;
+  user-select: none;
+}
+
+.source-item-header:hover {
+  background-color: #f9f9f9;
+}
+
+.citation-id {
+  font-weight: 600;
+  color: #1976d2;
+  min-width: 40px;
+  font-size: 14px;
+}
+
+.page-number {
+  color: #666;
+  font-size: 13px;
+  flex: 1;
+}
+
+.expand-icon {
+  color: #999;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.source-item.expanded .expand-icon {
+  transform: rotate(90deg);
+}
+
+.source-item-details {
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+  background-color: #fafafa;
+}
+
+.source-field {
+  margin-bottom: 12px;
+}
+
+.source-field:last-child {
+  margin-bottom: 0;
+}
+
+.source-field .label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.source-field .value {
+  display: block;
+  color: #555;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.source-field .snippet {
+  margin: 4px 0 0 0;
+  padding: 8px;
+  background: white;
+  border-left: 3px solid #1976d2;
+  border-radius: 4px;
+  color: #555;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: 120px;
+  overflow-y: auto;
+}
