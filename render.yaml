@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: ikmsrag-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 4 -b 0.0.0.0:8000 src.app.api:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
+      - key: OPENAI_API_KEY
+        scope: build,runtime
+      - key: PINECONE_API_KEY
+        scope: build,runtime
+      - key: PINECONE_ENVIRONMENT
+        value: us-east-1
+      - key: PINECONE_INDEX_NAME
+        value: ikms-rag
+      - key: API_HOST
+        value: 0.0.0.0
+      - key: API_PORT
+        value: 8000
+      - key: ENVIRONMENT
+        value: production
+      - key: LANGCHAIN_DEBUG
+        value: "false"

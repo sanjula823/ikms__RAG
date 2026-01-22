@@ -1,0 +1,19 @@
+This is a test document for PDF indexing.
+
+It contains multiple paragraphs to test the chunking and embedding system.
+
+The IKMS RAG system can now properly index PDF files and retrieve relevant information.
+
+Machine learning is a subset of artificial intelligence that enables systems to learn from data.
+
+Natural language processing helps computers understand and generate human language.
+
+Vector embeddings represent text as numerical values for similarity search.
+
+Pinecone provides fast similarity search at scale for machine learning applications.
+
+LangChain orchestrates language models and other tools for complex AI workflows.
+
+Citations track which parts of documents are used to generate answers.
+
+This is the end of the test document.

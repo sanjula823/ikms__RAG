@@ -1,0 +1,10 @@
+src/
+requirements.txt
+Dockerfile
+docker-compose.yml
+*.md
+.git
+__pycache__
+*.pyc
+.pytest_cache
+.env
